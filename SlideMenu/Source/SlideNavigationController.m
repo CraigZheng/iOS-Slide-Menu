@@ -615,7 +615,7 @@ static SlideNavigationController *singletonInstance;
       for (UIView *subview2 in subview.subviews) {
         if ([subview2 isKindOfClass:NSClassFromString(@"UIDropShadowView")]) {
           for (UIView *subview3 in subview2.subviews) {
-            if ([subview3 isKindOfClass:NSClassFromString(@"UIView")]) {
+            if ([subview3 isMemberOfClass:NSClassFromString(@"UIView")]) {
               self.problemView = subview3;
             }
           }
